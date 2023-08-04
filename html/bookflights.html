@@ -42,53 +42,16 @@
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 
     <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10818301347"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-10818301347');
-    </script>
-    <!-- Event snippet for flights/accra (1) conversion page -->
-    <script>
-        gtag('event', 'conversion', { 'send_to': 'AW-10818301347/bEVuCKSHnZsYEKPbyKYo' });
-    </script>
+  
     <!-- Event snippet for flights/accra (1) conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-10818301347/bEVuCKSHnZsYEKPbyKYo',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
+  
 
     <!-- Event snippet for flights/accra conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-10818301347/tblkCM78y5UYEKPbyKYo',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
+    
 
-    <meta http-equiv="origin-trial"
+    <!-- <meta http-equiv="origin-trial"
         content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
     <meta http-equiv="origin-trial"
         content="A+xK4jmZTgh1KBVry/UZKUE3h6Dr9HPPioFS4KNCzify+KEoOii7z/goKS2zgbAOwhpZ1GZllpdz7XviivJM9gcAAACFeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiQXR0cmlidXRpb25SZXBvcnRpbmdDcm9zc0FwcFdlYiIsImV4cGlyeSI6MTcwNzI2Mzk5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
@@ -97,27 +60,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <script type="text/javascript" async=""
         src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10818301347/?random=1688977796253&amp;cv=11&amp;fst=1688977796253&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3750&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fflightslocator.co.uk%2Fsearch-results%3Fstart_id%3D142%26destination_id%3D142%26journey_date%3D2023-07-18%26return_date%3D2023-07-19%26passengers%3D%257B%2522adult%2522%253A1%252C%2522children%2522%253A0%252C%2522infant%2522%253A0%257D%26flight_class%3D4%26info%3D%257B%2522name%2522%253Anull%252C%2522phone%2522%253Anull%252C%2522email%2522%253Anull%257D&amp;ref=https%3A%2F%2Fflightslocator.co.uk%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Flights%20Locator&amp;auid=308963664.1688474765&amp;uaa=x86&amp;uab=64&amp;uafvl=Not.A%252FBrand%3B8.0.0.0%7CChromium%3B114.0.5735.201%7CMicrosoft%2520Edge%3B114.0.1823.67&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
     <script attributionsrc="" type="text/javascript" async=""
-        src="https://www.googleadservices.com/pagead/conversion/10818301347/?random=1688977796319&amp;cv=11&amp;fst=1688977796319&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3750&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fflightslocator.co.uk%2Fsearch-results%3Fstart_id%3D142%26destination_id%3D142%26journey_date%3D2023-07-18%26return_date%3D2023-07-19%26passengers%3D%257B%2522adult%2522%253A1%252C%2522children%2522%253A0%252C%2522infant%2522%253A0%257D%26flight_class%3D4%26info%3D%257B%2522name%2522%253Anull%252C%2522phone%2522%253Anull%252C%2522email%2522%253Anull%257D&amp;ref=https%3A%2F%2Fflightslocator.co.uk%2F&amp;label=bEVuCKSHnZsYEKPbyKYo&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Flights%20Locator&amp;gtm_ee=1&amp;auid=308963664.1688474765&amp;uaa=x86&amp;uab=64&amp;uafvl=Not.A%252FBrand%3B8.0.0.0%7CChromium%3B114.0.5735.201%7CMicrosoft%2520Edge%3B114.0.1823.67&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dconversion&amp;rfmt=3&amp;fmt=4"></script>
+        src="https://www.googleadservices.com/pagead/conversion/10818301347/?random=1688977796319&amp;cv=11&amp;fst=1688977796319&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3750&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fflightslocator.co.uk%2Fsearch-results%3Fstart_id%3D142%26destination_id%3D142%26journey_date%3D2023-07-18%26return_date%3D2023-07-19%26passengers%3D%257B%2522adult%2522%253A1%252C%2522children%2522%253A0%252C%2522infant%2522%253A0%257D%26flight_class%3D4%26info%3D%257B%2522name%2522%253Anull%252C%2522phone%2522%253Anull%252C%2522email%2522%253Anull%257D&amp;ref=https%3A%2F%2Fflightslocator.co.uk%2F&amp;label=bEVuCKSHnZsYEKPbyKYo&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Flights%20Locator&amp;gtm_ee=1&amp;auid=308963664.1688474765&amp;uaa=x86&amp;uab=64&amp;uafvl=Not.A%252FBrand%3B8.0.0.0%7CChromium%3B114.0.5735.201%7CMicrosoft%2520Edge%3B114.0.1823.67&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dconversion&amp;rfmt=3&amp;fmt=4"></script> -->
 </head>
 
 <body>
     <!-- Google tag (gtag.js) -->
-    <amp-analytics type="gtag" data-credentials="include">
-        <script type="application/json">
-{
-  "vars": {
-    "gtag_id": "AW-10818301347",
-    "config": {
-      "AW-10818301347": {
-        "groups": "default"
-      }
-    }
-  },
-  "triggers": {
-  }
-}
-</script>
-    </amp-analytics>
+ 
 
     <!-- navbar start -->
     <section class="main-navbar true sticky">
