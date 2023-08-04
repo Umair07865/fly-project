@@ -996,7 +996,7 @@ ${elem.fromCode}</span><span class="text-right">
                         <img src="../assets/f_con-95f7a60a.png" class="img-responsive">
                         <small class="d-block">
                             <small>
-                                ${elem.outcommingToSecondStopTimeDuration} ------
+                                ${elem.outcommingToSecondStopTimeDuration} 
                             </small>
                         </small>
                     </div>
@@ -1429,7 +1429,7 @@ Departure:
                     ACC</span>
             </p>
             <small class="mb-1">
-                                                                                                                Sat, Jul 29 - 7:40PM
+            ${elem.endArrivalDate}-${elem.arrTime}               
             </small>
             <small class="d-block">
                 <i class="fa fa-briefcase"></i>
