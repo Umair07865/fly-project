@@ -1258,7 +1258,7 @@ stop</small>
 </div>
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 airline">
-<small title="Tap Air Portugal" class="text-muted fa-.1x d-block">Tap Air Portugal</small>
+<small title="Tap Air Portugal" class="text-muted fa-.1x d-block">${elem.stops}</small>
 <img src="${elem.img}" alt="Tap Air Portugal" class="w-50">
 
 </div>
@@ -1289,7 +1289,7 @@ flight details
 </a>
 
 <div class="detail details2" >
-<div class="close_details position-absolute" @click.prevent="active = false">
+<div class="close_details close_details2 position-absolute" @click.prevent="active = false">
 <i class="fa fa-times"></i>
 </div>
 
@@ -1378,7 +1378,7 @@ Departure:
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 leg-flight-details text-center">
         <img src="${elem.img}" alt="Tap Air Portugal" title="Tap Air Portugal" class="mb-2">
-        <small class="fw-semibold d-block">Tap Air Portugal</small>
+        <small class="fw-semibold d-block">${elem.stops}</small>
     </div>
 </div>
                                                                                                                                                 
@@ -1441,7 +1441,7 @@ Departure:
 </div>
 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 leg-flight-details text-center">
 <img src="${elem.img}" alt="Tap Air Portugal" title="Tap Air Portugal" class="mb-2">
-<small class="fw-semibold d-block">Tap Air Portugal</small>
+<small class="fw-semibold d-block">${elem.stops}</small>
 </div>
 </div>
                                                     </div>
@@ -1554,7 +1554,13 @@ console.log(data2);
   });
  
 
+//this is for testin
 
+
+
+
+
+//testing ends heere
  
 
 
@@ -1597,6 +1603,7 @@ document.querySelector(".subs-button").classList.add("disabled");
   detailButtons3.forEach((button, index) => {
     button.addEventListener("click", () => {
       const detailElements3 = document.querySelectorAll(".detail");
+     
 
       // Hide all detail elements except the one corresponding to the clicked button
       detailElements3.forEach((detailElement3, i) => {
@@ -1605,6 +1612,30 @@ document.querySelector(".subs-button").classList.add("disabled");
           } else {
             detailElement3.classList.remove("active");
           }
+      });
+    });
+  });
+  
+
+
+
+
+  // Select all elements with the class "close_details2"
+
+
+  const detailButtons2 = document.querySelectorAll(".close_details2");
+
+  detailButtons2.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const detailElements2 = document.querySelectorAll(".detail2");
+  
+      // Hide all detail elements in Model 2 except the one corresponding to the clicked button
+      detailElements2.forEach((detailElement2, i) => {
+        if (i === index) {
+          detailElement2.classList.toggle("active");
+        } else {
+          detailElement2.classList.remove("active");
+        }
       });
     });
   });
